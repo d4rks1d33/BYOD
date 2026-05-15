@@ -1,0 +1,78 @@
+# Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9
+aiofiles==23.2.1
+
+# Database
+sqlalchemy[asyncio]==2.0.31
+asyncpg==0.29.0
+alembic==1.13.2
+psycopg2-binary==2.9.9
+pgvector==0.3.2
+
+# Pydantic / settings
+pydantic[email]==2.8.2
+pydantic-settings==2.3.4
+
+# Auth / crypto
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1  # Pinned: passlib 1.7.4 incompatible with bcrypt >=4.1
+cryptography==42.0.8
+pyotp==2.9.0
+
+# Task queue
+celery[redis]==5.4.0
+redis==5.0.7
+kombu==5.3.7
+flower==2.0.1
+
+# HTTP client
+httpx==0.27.0
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.3.0
+
+# AI / LLM — local
+llama-cpp-python==0.2.83
+ollama==0.3.0
+
+# AI / LLM — cloud providers (all optional — only used when API key is set)
+anthropic==0.34.2
+openai==1.43.0
+google-generativeai==0.7.2
+
+# Embeddings / ML
+numpy==1.26.4
+
+# Playwright (browser automation)
+playwright==1.45.0
+
+# Docker SDK
+docker==7.1.0
+
+# Code parsing
+tree-sitter==0.23.0
+
+# Security tools (run as subprocesses, not imported)
+# semgrep, nuclei, ffuf, katana, trufflehog — installed separately
+
+# Reporting
+WeasyPrint==62.3
+jinja2==3.1.4
+markdown==3.6
+pillow==10.4.0
+
+# Observability
+prometheus-client==0.20.0
+structlog==24.4.0
+
+# Utilities
+python-slugify==8.0.4
+pip-audit==2.7.3
+
+# Testing
+pytest==8.2.2
+pytest-asyncio==0.23.7
+httpx==0.27.0

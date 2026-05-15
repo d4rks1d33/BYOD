@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 213 31% 91%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 222 47% 11%;
+    --secondary-foreground: 213 31% 91%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 262 83% 58%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Terminal scrollbar */
+  .xterm-viewport::-webkit-scrollbar {
+    width: 6px;
+  }
+  .xterm-viewport::-webkit-scrollbar-thumb {
+    background: hsl(217 33% 25%);
+    border-radius: 3px;
+  }
+}
+
+/* Severity badge colors */
+.badge-critical { @apply bg-red-600 text-white; }
+.badge-high { @apply bg-orange-600 text-white; }
+.badge-medium { @apply bg-yellow-600 text-white; }
+.badge-low { @apply bg-green-600 text-white; }
+.badge-info { @apply bg-blue-600 text-white; }
