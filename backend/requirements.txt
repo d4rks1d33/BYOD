@@ -59,7 +59,7 @@ tree-sitter==0.23.0
 # semgrep, nuclei, ffuf, katana, trufflehog — installed separately
 
 # Reporting
-WeasyPrint==62.3
+WeasyPrint==70.0
 jinja2==3.1.4
 markdown==3.6
 pillow==10.4.0
